@@ -20,4 +20,6 @@
 **Actual Result:** Previously entered shipping information is cleared and all fields become empty.  
 **Expected Result:** Previously entered shipping information should be preserved when returning to the checkout information step. User should be able to review and edit previously entered data.  
 **Attachments:**
-[Watch video](./assets/checkout-reset.mov)
+Follow the link to watch video  
+https://github.com/user-attachments/assets/aad9b16a-7c85-4924-af15-6501364eac10
+
