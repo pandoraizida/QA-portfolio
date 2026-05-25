@@ -1,4 +1,4 @@
-# QA_portfolio
+# QA-portfolio
 
 Hello! I'm a QA Engineer with 7+ years of commercial experience in web, desktop, and API testing.
 
