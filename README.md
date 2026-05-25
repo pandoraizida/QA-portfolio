@@ -4,6 +4,8 @@ Hello! I'm a QA Engineer with 7+ years of commercial experience in web, desktop,
 
 This repository contains examples of:
 - Bug reports
+- [Performance testing with k6](https://github.com/pandoraizida/performance_tests_k6)
+- [End-to-end testing with Playwright](https://github.com/pandoraizida/qa-auto-engineer-javascript-project-Playwright)
 
 My experience includes:
 - Functional testing
