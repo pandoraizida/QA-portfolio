@@ -17,4 +17,6 @@
 **Actual Result:** Cursor remains default on hover over the clickable cart icon.  
 **Expected Result:** Cursor should change to pointer on hover, consistent with other clickable UI elements.  
 **Attachments:**
-[Watch video](./assets/missing-pointer.mov) 
+Follow the link to watch video  
+https://github.com/user-attachments/assets/442899f5-0051-425c-924c-cd42bb8c40b9
+
