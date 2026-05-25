@@ -4,7 +4,7 @@
 **Password**: secret_sauce  
 
 ## Bug report
-**Title:** Shipping information is cleared after returning to the checkout information step 
+**Title:** Shipping information is cleared after returning to the checkout information step  
 **Type:** UI/UX / Functional  
 **Environment:** Web version, Mobile version  
 **Severity:** High  
