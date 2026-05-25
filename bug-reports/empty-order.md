@@ -21,4 +21,5 @@
 **Actual Result:** The order is successfully created with no products and a total amount of $0. User is redirected to the “Thank you for your order!” page.  
 **Expected Result:** The user should not be able to complete checkout with an empty cart. The Checkout button should be disabled when the cart is empty.  
 **Attachments:**
-[Watch video](./assets/empty-order.mp4)
+https://github.com/user-attachments/assets/3cc11121-d7bc-4e0e-92f1-b3a13ceec0d1
+
