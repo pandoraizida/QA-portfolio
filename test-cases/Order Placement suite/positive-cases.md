@@ -11,10 +11,10 @@ https://www.saucedemo.com
 * Cart is empty  
 * No products are present in the cart  
 
-### TC-ORDER-01: Successful order placement
+### ORDER-01: Successful order placement
 
 Steps:  
-1. Add product(s) to cart  
+1. Add product to cart  
 2. Go to cart  
 3. Click Checkout  
 4. Enter valid data (First Name, Last Name, Postal Code) and click Continue  
@@ -24,7 +24,7 @@ Expected result:
 * Order is successfully placed  
 * “Thank you for your order” message is displayed  
 
-### TC-ORDER-02: Order with multiple items
+### ORDER-02: Order with multiple items
 
 Steps:  
 1. Add multiple products  
@@ -34,10 +34,10 @@ Expected result:
 * All items are included in the order  
 * “Thank you for your order” message is displayed  
 
-### TC-ORDER-03: Total price calculation check
+### ORDER-03: Total price calculation check
 
 Steps:  
-1. Add product(s)  
+1. Add product  
 2. Go to Checkout Overview  
 
 Expected result:  

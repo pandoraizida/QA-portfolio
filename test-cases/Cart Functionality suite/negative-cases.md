@@ -3,7 +3,7 @@ https://www.saucedemo.com
 **User:** standard_user  
 **Password:** secret_sauce  
 
-### TC-CART-08: Attempt to remove a non-existent product
+### CART-08: Attempt to remove a non-existent product
 
 Steps:  
 1. Log in to the application  
@@ -13,7 +13,7 @@ Steps:
 Expected result:  
 * No errors occur, UI remains stable.  
 
-### TC-CART-09: Multiple clicks on “Add to cart”
+### CART-09: Multiple clicks on “Add to cart”
 
 Steps:  
 1. Log in to the application  
@@ -22,7 +22,7 @@ Steps:
 Expected result:  
 * Product is not duplicated in the cart  
 
-### TC-CART-10: Cart access without authentication
+### CART-10: Cart access without authentication
 
 Steps:  
 1. Open the site without login  
@@ -31,7 +31,7 @@ Steps:
 Expected result:  
 * Redirect to login page  
 
-### TC-CART-11: Cart behavior after page refresh
+### CART-11: Cart behavior after page refresh
 
 Steps:  
 1. Log in to the application  
