@@ -22,18 +22,7 @@ This repository contains examples of:
 ## Tech Stack  
 
 ```
-- Playwright
-- Postman
-- DevTools
-- REST API
-- WebSocket
-- MySQL
-- MongoDB
-- Docker
-- GitLab
-- Sentry
-- Kibana
-- k6
+Playwright * Postman * DevTools * REST API * WebSocket * MySQL * MongoDB * Docker * GitLab * Sentry * Kibana * k6
 ```
 
 ## Notes
