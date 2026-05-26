@@ -3,11 +3,13 @@
 Hello! I'm a QA Engineer with 7+ years of commercial experience in web, desktop, and API testing.
 
 This repository contains examples of:
-- Bug reports
+- [Bug reports](https://github.com/pandoraizida/QA-portfolio/tree/main/bug-reports)
+- [Test cases](https://github.com/pandoraizida/QA-portfolio/tree/main/test-cases)
 - [Performance testing with k6](https://github.com/pandoraizida/performance_tests_k6)
 - [End-to-end testing with Playwright](https://github.com/pandoraizida/qa-auto-engineer-javascript-project-Playwright)
 
-My experience includes:
+## My experience includes:
+
 - Functional testing
 - Regression testing
 - Smoke testing
@@ -17,8 +19,9 @@ My experience includes:
 - Release validation
 - Production monitoring
 
-## Tech Stack
+## Tech Stack  
 
+```
 - Playwright
 - Postman
 - DevTools
@@ -31,6 +34,7 @@ My experience includes:
 - Sentry
 - Kibana
 - k6
+```
 
 ## Notes
 

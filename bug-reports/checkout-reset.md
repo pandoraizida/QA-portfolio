@@ -9,7 +9,7 @@
 **Environment:** Web version, Mobile version  
 **Severity:** High  
 **Frequency:** 100%  
-**Preconditions:** User is logged into the shop application and is on the main page.  
+**Preconditions:** User is logged into the shop application and is on the Product page.  
 **Steps to Reproduce:**  
 1. Add any product to the cart by clicking the Add to Cart button.  
 2. Open the cart page by clicking the cart icon in the top-right corner.  
@@ -20,6 +20,6 @@
 **Actual Result:** Previously entered shipping information is cleared and all fields become empty.  
 **Expected Result:** Previously entered shipping information should be preserved when returning to the checkout information step. User should be able to review and edit previously entered data.  
 **Attachments:**
-Follow the link to watch video  
+Click on the link to watch video  
 https://github.com/user-attachments/assets/aad9b16a-7c85-4924-af15-6501364eac10
 
