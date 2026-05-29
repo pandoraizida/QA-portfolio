@@ -11,7 +11,7 @@ https://www.saucedemo.com
 * Cart is empty  
 * No items are present in the cart  
 
-### ORDER-01: ORDER-01: Successful order placement with one item
+### ORDER-01: Successful order placement with one item
 
 Steps:  
 1. Add an item to cart  
