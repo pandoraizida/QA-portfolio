@@ -1,0 +1,19 @@
+{
+  "name": "e2e_playwright-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "e2e"
+  },
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "e.kochetova",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.1"
+  }
+}

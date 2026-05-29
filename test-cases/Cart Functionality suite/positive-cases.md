@@ -5,78 +5,67 @@ https://www.saucedemo.com
 
 **Preconditions**
 * User is logged in to the application  
-* User is on the Products page  
+* User is on the Items page  
 
 **Postconditions**
 * Cart is empty  
-* No products are present in the cart  
+* No items are present in the cart  
 
-### CART-01: Add product to cart 
+### CART-01: Added item displays in the cart 
 
 Steps:   
-1. Click “Add to cart” for a product
+1. Click “Add to cart” for an item
 
 Expected result:  
 * Cart icon counter increases  
-* Product appears in the cart  
+* Item appears in the cart  
 
-### CART-02: Add multiple products
+### CART-02: Added multiple items display in the cart
 
 Steps:  
-1. Add 2–3 different products  
+1. Add 2–3 different items  
 
 Expected result:  
-* All products are displayed in the cart  
+* All items are displayed in the cart  
 * Cart counter is correct  
 
-### CART-03: Remove product from cart
+### CART-03: Removed from cart item is not displayed in the cart
 
 Steps:  
-1. Add a product  
+1. Add an item  
 2. Go to the cart  
 3. Click “Remove”
 
 Expected result:  
-* Product is removed from the cart  
+* Item is removed from the cart  
 * Cart counter decreases  
 
-### CART-04: Remove product from product list page
+### CART-04: Added to the cart item can be removed from the Item list
 
 Steps:  
-1. Add a product  
-2. Click “Remove” on the product listing page
+1. Add an item  
+2. Click “Remove” on the item listing page
 
 Expected result:  
-* Product is removed from the cart  
+* Item is removed from the cart  
 * Button changes back to “Add to cart”
 
-### CART-05: Remove product from product details page
+### CART-05: Added to the cart item can be removed from the Item Details page
 
 Steps:  
-1. Add a product  
-2. Go to product details page  
+1. Add an item  
+2. Go to item details page  
 3. Click “Remove”  
 
 Expected result:  
-* Product is removed from the cart  
+* Item is removed from the cart  
 * Button changes back to “Add to cart” 
 
 ### CART-06: Cart persistence check
 
 Steps:  
-1. Add a product  
+1. Add an item  
 2. Navigate between pages
 
 Expected result:  
-* Cart contents remain unchanged
-
-### CART-07: Contunue shopping check
-
-Steps:  
-1. Add a product  
-2. Go to cart  
-3. Click “Contunue shopping”  
-
-Expected result:  
-* User is on Product list page  
 * Cart contents remain unchanged  

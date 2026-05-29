@@ -5,16 +5,16 @@ https://www.saucedemo.com
 
 **Preconditions**
 * User is logged in to the application  
-* User is on the Products page  
+* User is on the Items page  
 
 **Postconditions**
 * Cart is empty  
-* No products are present in the cart  
+* No items are present in the cart  
 
-### ORDER-04: Empty fields in checkout form
+### ORDER-04: If Checkout form fields are empty the error message should be visible
 
 Steps:  
-1. Add product to cart  
+1. Add an item to cart  
 2. Go to Checkout  
 3. Leave required fields empty  
 4. Click Continue  
@@ -22,34 +22,46 @@ Steps:
 Expected result:  
 * Error message appears (e.g., “First Name is required”)  
 
-### ORDER-05: Checkout with empty cart
+### ORDER-05: When checkout with empty cart Checkout button should be disabled
 
-Steps:  
-1. Add product(s) to cart  
-2. Go to Checkout without adding items  
+Steps:   
+1. Go to Checkout without adding items  
 
 Expected result:  
 * Checkout is blocked or cart is shown as empty  
 
-### ORDER-06: Cancel checkout process
+### CART-06: Contunue shopping should return back to the Item List
 
 Steps:  
-1. Add product to cart  
+1. Add an item  
+2. Go to cart  
+3. Click “Contunue shopping”  
+
+Expected result:  
+* User is on Items list page  
+* Cart contents remain unchanged  
+
+### ORDER-07: Canceling checkout process should led to the cart
+
+Steps:  
+1. Add an item to cart  
 2. Start checkout  
 2. Click Cancel  
 
 Expected result:  
 * User is returned to cart, order is not created  
+* Cart contents remain unchanged  
 
-### ORDER-07: Cancel order placement
+### ORDER-08: Canceling order placement should led to Item List
 
 Steps:  
-1. Add product to cart  
+1. Add an item to cart  
 2. Go to cart  
 3. Click Checkout  
 4. Enter valid data (First Name, Last Name, Postal Code) and click Continue  
 5. Click Cancel  
 
 Expected result:  
-* User is returned to the Product list, order is not created  
+* User is returned to the Items list, order is not created  
+* Cart contents remain unchanged  
  
