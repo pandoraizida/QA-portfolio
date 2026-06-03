@@ -1,18 +1,21 @@
 import { expect } from "playwright/test";
 import { pageTitles } from "../constants.ts";
 import { test } from "../fixtures/loginFixture.ts";
+import * as allure from 'allure-js-commons';
 
 test.describe('Order Placement Suite', () => {
 
     test.beforeEach(async ({ loginPage, itemList }) =>{
+        await allure.owner('e.kochetova');
     
-    await loginPage.userLogin();
-    
-    await itemList.expectBeOnListItemsPage(pageTitles.itemList);
+        await loginPage.userLogin();
+        
+        await itemList.expectBeOnListItemsPage(pageTitles.itemList);
 
     });
 
-    test('ORDER-01: Successful order placement with one item', async ({ cartPage }) => {
+    test('ORDER-01: Successful order placement with one item @regression @smoke', async ({ cartPage }) => {
+        await allure.severity(allure.Severity.CRITICAL);
         
         await cartPage.openCartAfterAddingOneItem();
 
@@ -35,7 +38,8 @@ test.describe('Order Placement Suite', () => {
         await expect(cartPage.completeOrderInfo).toBeVisible();
     });
 
-    test('ORDER-02: Successful order placement with multiple items', async ({ itemList, cartPage }) => {
+    test('ORDER-02: Successful order placement with multiple items @regression', async ({ itemList, cartPage }) => {
+        await allure.severity(allure.Severity.CRITICAL);
         
         await itemList.addMultipleItemsToCart();
         await itemList.cartIcon.click();
@@ -58,7 +62,8 @@ test.describe('Order Placement Suite', () => {
         await expect(cartPage.completeOrderInfo).toBeVisible();
     });
 
-    test('ORDER-04: If Checkout form fields are empty the error message should be visible', async ({ cartPage }) => {
+    test('ORDER-04: If Checkout form fields are empty the error message should be visible @regression', async ({ cartPage }) => {
+        await allure.severity(allure.Severity.NORMAL);
         
         await cartPage.openCartAfterAddingOneItem();
 
@@ -75,7 +80,8 @@ test.describe('Order Placement Suite', () => {
 
     });
 
-    test('CART-06: Contunue shopping should return back to the Item List', async ({ itemList, cartPage }) => {
+    test('CART-06: Contunue shopping should return back to the Item List @regression @smoke', async ({ itemList, cartPage }) => {
+        await allure.severity(allure.Severity.NORMAL);
 
         await cartPage.openCartAfterAddingOneItem();
 
@@ -89,7 +95,8 @@ test.describe('Order Placement Suite', () => {
         await itemList.expectCartBadgeShowsItemCount(1);
     });
 
-    test('ORDER-07: Canceling checkout process should led to the cart', async ({ cartPage }) => {
+    test('ORDER-07: Canceling checkout process should led to the cart @regression', async ({ cartPage }) => {
+        await allure.severity(allure.Severity.NORMAL);
         
         await cartPage.openCartAfterAddingOneItem();
 
@@ -109,7 +116,8 @@ test.describe('Order Placement Suite', () => {
 
     });
 
-    test('ORDER-08: Canceling order placement should led to Item List', async ({ itemList, cartPage }) => {
+    test('ORDER-08: Canceling order placement should led to Item List @regression', async ({ itemList, cartPage }) => {
+        await allure.severity(allure.Severity.NORMAL);
         
         await cartPage.openCartAfterAddingOneItem();
 

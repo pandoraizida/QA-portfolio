@@ -7,13 +7,16 @@
     "test": "e2e"
   },
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test --grep @regression",
+    "test:smoke": "playwright test --grep @smoke"
   },
   "author": "e.kochetova",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "allure-commandline": "^2.42.0",
+    "allure-playwright": "^3.9.0"
   }
 }
