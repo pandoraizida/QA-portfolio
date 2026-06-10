@@ -7,11 +7,7 @@ test.describe('Cart Functionality Suite', () => {
 
     test.beforeEach(async ({ loginPage, itemList }) =>{
         await allure.owner('e.kochetova');
-        
-        await loginPage.userLogin();
-        
         await itemList.expectBeOnListItemsPage(pageTitles.itemList);
-
     });
 
 
@@ -28,7 +24,6 @@ test.describe('Cart Functionality Suite', () => {
         await cartPage.expectBeOnPage(pageTitles.cart);
         await expect(cartPage.removeFromCartFirstItemButton).toBeVisible();
         await expect(cartPage.items).toHaveCount(1);
-        //here
         await cartPage.expectCartBadgeShowsItemCount(1);
     });
 

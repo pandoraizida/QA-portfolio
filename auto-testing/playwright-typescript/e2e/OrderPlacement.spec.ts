@@ -7,11 +7,7 @@ test.describe('Order Placement Suite', () => {
 
     test.beforeEach(async ({ loginPage, itemList }) =>{
         await allure.owner('e.kochetova');
-    
-        await loginPage.userLogin();
-        
         await itemList.expectBeOnListItemsPage(pageTitles.itemList);
-
     });
 
     test('ORDER-01: Successful order placement with one item @regression @smoke', async ({ cartPage }) => {
