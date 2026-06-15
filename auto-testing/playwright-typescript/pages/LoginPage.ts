@@ -1,5 +1,4 @@
 import { Locator, Page, expect } from '@playwright/test';
-import { userCreds } from '../constants.ts';
 
 export default class LoginPage {
     readonly page: Page;
@@ -17,16 +16,6 @@ export default class LoginPage {
     async gotoLoginPage() {
         await this.page.goto('/');
     };
-
-    async userLogin() {
-        const userName = userCreds.userName;
-        const userPass = userCreds.userPass;
-
-        await this.gotoLoginPage();
-        await this.userName.fill(userName);
-        await this.userPassword.fill(userPass);
-        await this.loginButton.click();
-    }
     
     async expectBeOnLoginPage() {
         await expect(this.userName).toBeVisible();

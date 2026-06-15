@@ -5,9 +5,8 @@ import * as allure from 'allure-js-commons';
 
 test.describe('Cart Functionality Suite', () => {
 
-    test.beforeEach(async ({ loginPage, itemList }) =>{
+    test.beforeEach(async () =>{
         await allure.owner('e.kochetova');
-        await itemList.expectBeOnListItemsPage(pageTitles.itemList);
     });
 
 
@@ -41,12 +40,10 @@ test.describe('Cart Functionality Suite', () => {
         await cartPage.expectCartBadgeShowsItemCount(2);
     });
 
-    test('CART-03: Removed from cart item is not displayed in the cart @regression @smoke', async ({ itemList, cartPage }) => {
+    test('CART-03: Removed from cart item is not displayed in the cart @regression @smoke', async ({ cartPage }) => {
         await allure.severity(allure.Severity.NORMAL);
 
-        await itemList.addOneItemToCart();
-
-        await itemList.cartIcon.click();
+        await cartPage.openCartAfterAddingOneItem();
 
         await cartPage.expectBeOnPage(pageTitles.cart);
         await expect(cartPage.items).toHaveCount(1);
@@ -110,12 +107,10 @@ test.describe('Cart Functionality Suite', () => {
         await cartPage.expectCartBadgeShowsItemCount(1);
     })
 
-    test('CART-10: Refreshing Cart page does not affect cart state @regression', async ({ itemList, cartPage, page }) => {
+    test('CART-10: Refreshing Cart page does not affect cart state @regression', async ({ cartPage, page }) => {
         await allure.severity(allure.Severity.NORMAL);
 
-        await itemList.addOneItemToCart();
-
-        await itemList.cartIcon.click();
+        await cartPage.openCartAfterAddingOneItem();
         
         await cartPage.expectBeOnPage(pageTitles.cart);
         await expect(cartPage.items).toHaveCount(1);

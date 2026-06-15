@@ -5,9 +5,8 @@ import * as allure from 'allure-js-commons';
 
 test.describe('Order Placement Suite', () => {
 
-    test.beforeEach(async ({ loginPage, itemList }) =>{
+    test.beforeEach(async () =>{
         await allure.owner('e.kochetova');
-        await itemList.expectBeOnListItemsPage(pageTitles.itemList);
     });
 
     test('ORDER-01: Successful order placement with one item @regression @smoke', async ({ cartPage }) => {
@@ -76,7 +75,7 @@ test.describe('Order Placement Suite', () => {
 
     });
 
-    test('CART-06: Contunue shopping should return back to the Item List @regression @smoke', async ({ itemList, cartPage }) => {
+    test('ORDER-06: Contunue shopping should return back to the Item List @regression @smoke', async ({ itemList, cartPage }) => {
         await allure.severity(allure.Severity.NORMAL);
 
         await cartPage.openCartAfterAddingOneItem();
