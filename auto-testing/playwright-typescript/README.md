@@ -32,10 +32,11 @@ playwright-typescript/
 │   ├── baseFixture.ts            # Page object fixtures (itemList, cartPage, etc.)
 │   └── loginFixture.ts           # Auto-login fixture (runs before every test)
 ├── pages/                        # Page Object Models
-│   ├── LoginPage.ts
-│   ├── ItemList.ts
-│   ├── CartPage.ts               # Extends ItemList
-│   └── ItemDetailsPage.ts        # Extends ItemList
+│   ├── BasePage.ts               # Abstract base class for all post-login pages
+│   ├── LoginPage.ts              # Standalone (pre-authentication page)
+│   ├── ItemList.ts               # Extends BasePage
+│   ├── CartPage.ts               # Extends BasePage
+│   └── ItemDetailsPage.ts        # Extends BasePage
 ├── constants.ts                  # Shared credentials, page titles, checkout data
 └── playwright.config.ts          # Browsers, reporters, base URL
 ```

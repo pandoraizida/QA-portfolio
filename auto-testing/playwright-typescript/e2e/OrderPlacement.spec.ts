@@ -75,7 +75,7 @@ test.describe('Order Placement Suite', () => {
 
     });
 
-    test('ORDER-06: Contunue shopping should return back to the Item List @regression @smoke', async ({ itemList, cartPage }) => {
+    test('ORDER-06: Continue shopping should return back to the Item List @regression @smoke', async ({ itemList, cartPage }) => {
         await allure.severity(allure.Severity.NORMAL);
 
         await cartPage.openCartAfterAddingOneItem();
@@ -86,7 +86,7 @@ test.describe('Order Placement Suite', () => {
 
         await cartPage.continueShoppingButton.click();
 
-        await itemList.expectBeOnListItemsPage(pageTitles.itemList);
+        await itemList.expectBeOnPage(pageTitles.itemList);
         await itemList.expectCartBadgeShowsItemCount(1);
     });
 
@@ -132,7 +132,7 @@ test.describe('Order Placement Suite', () => {
 
         await cartPage.cancelButton.click();
 
-        await itemList.expectBeOnListItemsPage(pageTitles.itemList);
+        await itemList.expectBeOnPage(pageTitles.itemList);
         await itemList.expectCartBadgeShowsItemCount(1);
 
     });

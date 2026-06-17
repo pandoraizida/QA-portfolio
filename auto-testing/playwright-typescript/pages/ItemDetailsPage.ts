@@ -1,19 +1,15 @@
 import { Locator, Page, expect } from '@playwright/test';
-import ItemList from "./ItemList";
+import { BasePage } from './BasePage';
 
-export default class ItemDetailsPage extends ItemList {
-    readonly page: Page;
-    readonly backToItemListButton: Locator;
-
+export default class ItemDetailsPage extends BasePage {
+    public readonly backToItemListButton: Locator;
 
     constructor(page: Page) {
         super(page);
-        this.page = page;
         this.backToItemListButton = page.getByTestId('back-to-products');
     }
 
-    async expectToBeOnItemDetailsPage() {
+    public async expectBeOnPage(): Promise<void> {
         await expect(this.backToItemListButton).toBeVisible();
     }
-    
 }

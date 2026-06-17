@@ -30,7 +30,7 @@ Steps:
 Expected result:  
 * Checkout is blocked or cart is shown as empty  
 
-### CART-06: Contunue shopping should return back to the Item List
+### CART-06: Continue shopping should return back to the Item List
 
 Steps:  
 1. Add an item  

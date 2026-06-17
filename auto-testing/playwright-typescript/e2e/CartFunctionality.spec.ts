@@ -71,7 +71,7 @@ test.describe('Cart Functionality Suite', () => {
         await itemList.addOneItemToCart();
         await itemList.openFirstItemDetailsPage();
 
-        await itemDetailsPage.expectToBeOnItemDetailsPage();
+        await itemDetailsPage.expectBeOnPage();
         await expect(itemDetailsPage.removeFromCartFirstItemButton).toBeVisible();
 
         await itemDetailsPage.removeOneItemFromCart();
@@ -90,13 +90,13 @@ test.describe('Cart Functionality Suite', () => {
         //check from last item details page
         await itemList.openLastItemDetails();
 
-        await itemDetailsPage.expectToBeOnItemDetailsPage();
+        await itemDetailsPage.expectBeOnPage();
         await itemDetailsPage.expectCartBadgeShowsItemCount(1);
 
         //check from Item List
         await itemDetailsPage.backToItemListButton.click();
 
-        await itemList.expectBeOnListItemsPage(pageTitles.itemList);
+        await itemList.expectBeOnPage(pageTitles.itemList);
         await itemList.expectCartBadgeShowsItemCount(1);
         
         //check from Cart page
