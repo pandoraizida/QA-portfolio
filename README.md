@@ -8,10 +8,7 @@ This repository showcases my practical QA skills across different areas of softw
 - [End-to-end UI automation with Playwright (JavaScript)](https://github.com/pandoraizida/qa-auto-engineer-javascript-project-Playwright)
 - [End-to-end UI automation with Playwright (TypeScript)](https://github.com/pandoraizida/QA-portfolio/tree/main/auto-testing/playwright-typescript)
 - [Performance testing with k6](https://github.com/pandoraizida/performance_tests_k6)
-
-### API Testing (IN PROGRESS)
-- REST API testing examples  
-- Request validation and response verification  
+- [End-to-End & Integration Test Automation Framework for Backend Services](https://github.com/pandoraizida/ai-first-backend-autotesting)
 
 ### QA Practice
 - [Test case design and test documentation examples](https://github.com/pandoraizida/QA-portfolio/tree/main/test-cases)
